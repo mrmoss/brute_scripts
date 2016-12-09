@@ -12,3 +12,6 @@ Usage
 ./ssh_bruter.py HOSTNAME USERNAME [PORT]
 ./ssh_bruter_threaded.py HOSTNAME USERNAME [PORT] [THREADS]
 ```
+
+Bugs:
+Ctrl+C doesn't really work...
