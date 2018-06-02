@@ -17,7 +17,7 @@ except Exception:
 #returns (INT,STR)
 #  INT is either 1 fail, 0 success, or -1 error
 #  STR is error string or success string
-def ssh_login(server,username,password,timeout=None,port=22):
+def ssh_login(server,username,password,timeout=10000,port=22):
 	try:
 		conn=paramiko.SSHClient()
 		conn.set_missing_host_key_policy(paramiko.AutoAddPolicy())
