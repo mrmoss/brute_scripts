@@ -38,7 +38,7 @@ def worker(pool_man,hostname,username,workgroup):
 					pool_man.show(password+'\t'+test[1])
 					if test[0]!=1:
 						pool_man.set_result(test)
-	except:
+	except Exception:
 		pass
 
 pool_man=pool_manager.pool_manager_t()

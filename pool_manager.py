@@ -63,6 +63,6 @@ class pool_manager_t:
 				for tt in self.threads:
 					tt.join()
 				break
-			except:
+			except Exception:
 				pass
 		return self.get_result()
